@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@700;800&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -26,19 +27,9 @@ img {
 }
 
 .hero-image {
-    /*  This creates an image overlay  */
-
-    /*background-image:*/
-    /*        !*linear-gradient(*!*/
-    /*        !*        to bottom,*!*/
-    /*        !*        rgba(19, 45, 71,0.4),*!*/
-    /*        !*        rgba(19, 45, 71,0.4)),*!*/
-    /*        url(IMG/building_front.jpg);*/
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* to ensure the image takes up the entire viewport */
     height: 600px;
     position: relative;
 
@@ -72,7 +63,7 @@ img{
 
 .hero-text h1 {
     font-size: 2.3em;
-    font-weight: 300;
+    font-weight: 800;
 
 }
 
@@ -84,5 +75,63 @@ img{
     font-weight: bold;
     font-kerning: normal;
 
+}
+
+
+.ring {
+    font-size: 12em;
+    width: 1.0em;
+    height: 1.0em;
+    border: 0.05em solid;
+    color: #041f3d;
+    position: relative;
+    border-radius: 1.35em;
+    top: -10rem;
+    z-index: -1;
+}
+
+
+.card-list{
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+}
+
+h2{
+    color: #041f3d;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
 
 }
+
+h3{
+    color: #21bae2;
+    font-size: 4em;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+h4{
+    color: #041f3d;
+}
+
+/*@media all and (max-width: 500px) {*/
+/*    .card-list {*/
+/*        !* On small screens, we are no longer using row direction but column *!*/
+/*        flex-direction: column;*/
+/*    }*/
+/*}*/
