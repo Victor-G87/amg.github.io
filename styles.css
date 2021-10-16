@@ -8,6 +8,7 @@
     /*border: 1px solid black;*/
 }
 
+
 body{
     font-family: 'Montserrat', sans-serif;
 
@@ -100,6 +101,7 @@ img{
     align-items: baseline;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: -66px;
 }
 
 .cards{
@@ -122,12 +124,15 @@ h2 {
     text-align: center;
     font-size: 1.2em;
     border: 0.4rem solid white;
+    height: 97px;
+    position: relative;
+    top: 72px;
 }
 
 h3{
     color: #21bae2;
     font-size: 4em;
-    background-color: white;
+    /*background-color: white;*/
     width: 100%;
     text-align: center;
     font-weight: 500;
@@ -138,15 +143,6 @@ h4{
     font-size: 0.9em;
 }
 
-/*@media all and (max-width: 500px) {*/
-/*    .card-list {*/
-/*        !* On small screens, we are no longer using row direction but column *!*/
-/*        flex-direction: column;*/
-/*    }*/
-/*}*/
-
-
-
 
 @media only screen and (max-width: 767px) {
     .card-list {
@@ -155,6 +151,7 @@ h4{
         flex-direction: column;
         align-content: center;
         align-items: stretch;
+        margin-top: -66px;
     }
 
     .ring{
@@ -183,5 +180,9 @@ h4{
         font-size: 1.5em;
         letter-spacing: 2px;
         font-kerning: normal;
+    }
+
+    h2{
+        height: 107px;
     }
 }
