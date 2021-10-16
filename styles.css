@@ -56,7 +56,7 @@ img{
 .hero-text {
     display: flex;
     background-color: #041f3d;
-    width: 100%;
+    width: 101%;
     height: 25%;
     opacity: 0.9;
     flex-direction: column;
